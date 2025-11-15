@@ -17,7 +17,7 @@ The system detects ingredients from fridge images and suggests creative recipes 
 
 ---
 
-##  Tech Stack
+##  Technologies Used
 
 | Component | Description |
 |----------|-------------|
