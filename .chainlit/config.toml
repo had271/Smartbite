@@ -1,0 +1,55 @@
+[project]
+enable_telemetry = true
+user_env = []
+session_timeout = 3600
+user_session_timeout = 1296000
+cache = false
+allow_origins = ["*"]
+
+[features]
+unsafe_allow_html = true
+latex = false
+auto_tag_thread = true
+edit_message = true
+
+[features.spontaneous_file_upload]
+enabled = true
+accept = ["*/*"]
+max_files = 20
+max_size_mb = 500
+
+[features.audio]
+sample_rate = 24000
+
+[UI]
+name = "SmartBite"
+default_theme = "light"
+login_page_image ="public/logo_light.jpg"
+logo = "/logo_light.jpg"
+logo_dark = "/logo_dark.jpg"
+custom_css = "public/hungerstation.css"
+
+cot = "hidden"
+# Override default MUI light theme. (Check theme.ts)
+[UI.theme.light]
+    background = "#FFFFFF"
+    paper = "#FFFFFF"
+
+    [UI.theme.light.primary]
+        main = "#110061"
+        dark = "#180039"
+        light = "#FFE7EB"
+# Override default MUI dark theme. (Check theme.ts)
+[UI.theme.dark]
+    background = "#1E1E1E"  # Dark background
+    paper = "#2A2A2A"       # Darker paper color
+
+    [UI.theme.dark.primary]
+        main = "#92F0EF"    # Bright blue main color
+        dark = "#003A70"     # Dark blue for accents
+        light = "#C8E0F4"    # Light blue for highlights
+    [UI.theme.dark.text]
+        primary = "#EEEEEE"
+        secondary = "#BDBDBD"
+[meta]
+generated_by = "1.2.0"

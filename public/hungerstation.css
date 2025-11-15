@@ -1,0 +1,39 @@
+
+
+:root {
+    --primary: #FFC627;
+    --text-color: #1D1D1B; 
+    --assistant-bg: #FFF7D6; 
+    --user-bg: #FFC627;       
+    --background: #FFFFFF;    
+}
+
+body {
+    background-color: var(--background) !important;
+}
+
+.cl-message.bot {
+    background-color: var(--assistant-bg) !important;
+    color: var(--text-color) !important;
+    border-radius: 16px !important;
+}
+
+.cl-message.user {
+    background-color: var(--user-bg) !important;
+    color: var(--text-color) !important;
+    border-radius: 16px !important;
+}
+
+.cl-action-button {
+    background-color: var(--primary) !important;
+    color: var(--text-color) !important;
+    border-radius: 12px !important;
+}
+
+.cl-header {
+    background-color: var(--primary) !important;
+}
+
+.cl-header h1, .cl-header span {
+    color: var(--text-color) !important;
+}
